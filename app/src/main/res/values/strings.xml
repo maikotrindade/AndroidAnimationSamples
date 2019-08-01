@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">AnimationSamples</string>
+    <string name="app_name">Animation Samples</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main">Main</string>
 </resources>

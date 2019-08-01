@@ -6,8 +6,8 @@
             app:startDestination="@id/mainFragment">
 
     <fragment android:id="@+id/mainFragment"
-              android:label="@string/main"
+              android:label="@string/view_anim_xml"
               tools:layout="@layout/fragment_main"
-              android:name="io.github.maikotrindade.animationsamples.ui.MainFragment"/>
+              android:name="io.github.maikotrindade.animationsamples.ui.ViewAnimationXMLFragment"/>
 
 </navigation>

@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             toolbar.title = navController.currentDestination?.label
         }
         appBarConfiguration = AppBarConfiguration(
-            topLevelDestinationIds = setOf(R.id.mainFragment)
+            topLevelDestinationIds = setOf(R.id.viewAnimFragment)
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
     }

@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.fragment_main.*
 class ViewAnimationXMLFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        return inflater.inflate(R.layout.fragment_view_animation, container, false)
     }
 
     override fun onStart() {

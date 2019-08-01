@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/navigation_graph"
-            app:startDestination="@id/mainFragment">
+<navigation
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/navigation_graph"
+        app:startDestination="@id/viewAnimFragment">
 
-    <fragment android:id="@+id/mainFragment"
+    <fragment android:id="@+id/viewAnimFragment"
               android:label="@string/view_anim_xml"
-              tools:layout="@layout/fragment_main"
+              tools:layout="@layout/fragment_view_animation"
               android:name="io.github.maikotrindade.animationsamples.ui.ViewAnimationXMLFragment"/>
 
 </navigation>

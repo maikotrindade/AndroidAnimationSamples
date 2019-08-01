@@ -1,4 +1,4 @@
-package io.github.maikotrindade.animationsamples.ui
+package io.github.maikotrindade.animationsamples.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             toolbar.title = navController.currentDestination?.label
         }
         appBarConfiguration = AppBarConfiguration(
-            topLevelDestinationIds = setOf(R.id.viewAnimFragment)
+            topLevelDestinationIds = setOf(R.id.mainFragment)
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
     }

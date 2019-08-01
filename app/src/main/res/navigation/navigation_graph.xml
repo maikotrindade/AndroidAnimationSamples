@@ -4,11 +4,21 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/navigation_graph"
-        app:startDestination="@id/viewAnimFragment">
+        app:startDestination="@id/mainFragment">
 
     <fragment android:id="@+id/viewAnimFragment"
-              android:label="@string/view_anim_xml"
+              android:label="@string/title_view_anim_xml"
               tools:layout="@layout/fragment_view_animation"
               android:name="io.github.maikotrindade.animationsamples.ui.ViewAnimationXMLFragment"/>
+
+    <fragment android:id="@+id/mainFragment"
+              android:label="@string/app_name"
+              tools:layout="@layout/fragment_main"
+              android:name="io.github.maikotrindade.animationsamples.main.MainFragment">
+
+        <action
+                android:id="@+id/action_viewAnimFragment"
+                app:destination="@id/viewAnimFragment"/>
+    </fragment>
 
 </navigation>

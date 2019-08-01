@@ -2,5 +2,5 @@
     <string name="app_name">Animation Samples</string>
     <string name="main">Main</string>
     <string name="animate">Animate</string>
-    <string name="view_anim_xml">View Animation with XML</string>
+    <string name="title_view_anim_xml">View Animation with XML</string>
 </resources>

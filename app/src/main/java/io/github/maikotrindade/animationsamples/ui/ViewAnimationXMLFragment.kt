@@ -8,7 +8,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
 import io.github.maikotrindade.animationsamples.R
-import kotlinx.android.synthetic.main.fragment_main.*
+import kotlinx.android.synthetic.main.fragment_view_animation.*
 
 class ViewAnimationXMLFragment : Fragment() {
 

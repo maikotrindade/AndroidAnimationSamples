@@ -4,6 +4,26 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="toolbarStyle">@style/ToolBarStyle</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/md_white_1000</item>
+        <item name="titleTextAppearance">@style/TitleTextAppearance</item>
+    </style>
+
+    <style name="TitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/md_grey_900</item>
+        <item name="android:fontFamily">@font/averia_sans_libre</item>
+    </style>
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/averia_sans_libre</item>
     </style>
 
 </resources>
+

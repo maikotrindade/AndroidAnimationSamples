@@ -8,8 +8,8 @@
 
     <fragment android:id="@+id/mainFragment"
               android:label="@string/app_name"
-              tools:layout="@layout/fragment_main"
-              android:name="io.github.maikotrindade.animationsamples.main.MainFragment">
+              tools:layout="@layout/fragment_home"
+              android:name="io.github.maikotrindade.animationsamples.home.HomeFragment">
 
         <action
                 android:id="@+id/action_viewAnimFragment"

@@ -1,4 +1,4 @@
-package io.github.maikotrindade.animationsamples.main
+package io.github.maikotrindade.animationsamples.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,13 +8,13 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import io.github.maikotrindade.animationsamples.R
-import io.github.maikotrindade.animationsamples.main.vo.Screen
-import kotlinx.android.synthetic.main.fragment_main.*
+import io.github.maikotrindade.animationsamples.home.vo.Screen
+import kotlinx.android.synthetic.main.fragment_home.*
 
-class MainFragment : Fragment(), MainListOutput {
+class HomeFragment : Fragment(), MainListOutput {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
     override fun onStart() {

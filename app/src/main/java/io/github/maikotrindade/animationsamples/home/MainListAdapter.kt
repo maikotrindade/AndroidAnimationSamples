@@ -1,11 +1,11 @@
-package io.github.maikotrindade.animationsamples.main
+package io.github.maikotrindade.animationsamples.home
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import io.github.maikotrindade.animationsamples.R
-import io.github.maikotrindade.animationsamples.main.vo.Screen
+import io.github.maikotrindade.animationsamples.home.vo.Screen
 import kotlinx.android.synthetic.main.item_main_list.view.*
 
 class MainListAdapter(private val items: List<Screen>, private val output: MainListOutput) : RecyclerView.Adapter<NewsViewHolder>() {

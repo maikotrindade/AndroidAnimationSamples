@@ -6,21 +6,29 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import io.github.maikotrindade.animationsamples.R
 import kotlinx.android.synthetic.main.fragment_view_animation_kotlin.*
 
-class ViewAnimationKotlinFragment : Fragment() {
+class ViewAnimationKotlinFragment : BaseFragment() {
 
     private val TAG = ViewAnimationKotlinFragment::class.java.simpleName
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        setHasOptionsMenu(true)
         return inflater.inflate(R.layout.fragment_view_animation_kotlin, container, false)
     }
 
     override fun onStart() {
         super.onStart()
         setupUI()
+    }
+
+    override fun reloadFragment() {
+        Toast.makeText(requireContext(), getString(R.string.reload_screen), Toast.LENGTH_SHORT).show()
+        findNavController().popBackStack()
+        findNavController().navigate(R.id.viewAnimKotlinFragment)
     }
 
     private fun setupUI() {

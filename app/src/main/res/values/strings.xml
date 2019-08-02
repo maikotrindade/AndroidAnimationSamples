@@ -4,4 +4,6 @@
     <string name="animate">Animate</string>
     <string name="title_view_anim_xml">View Animation with XML</string>
     <string name="title_view_anim_kotlin">View Animation with Kotlin</string>
+    <string name="reload">Reload</string>
+    <string name="reload_screen">Reloading screen...</string>
 </resources>

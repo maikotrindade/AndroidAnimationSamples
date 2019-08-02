@@ -1,4 +1,4 @@
-package io.github.maikotrindade.animationsamples.main
+package io.github.maikotrindade.animationsamples.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -10,15 +10,15 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import io.github.maikotrindade.animationsamples.R
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_home.*
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home)
         setupNavigation()
     }
 

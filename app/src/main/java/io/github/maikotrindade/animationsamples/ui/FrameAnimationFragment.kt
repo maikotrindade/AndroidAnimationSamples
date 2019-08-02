@@ -33,14 +33,14 @@ class FrameAnimationFragment : BaseFragment() {
 
     private fun setupUI() {
 
-        img_smile?.let {
+        img_animation?.let {
             it.visibility - View.INVISIBLE
             it.setImageDrawable(ContextCompat.getDrawable(requireContext(), R.drawable.animation_frame))
-            animation = img_smile.drawable as AnimationDrawable
+            animation = img_animation.drawable as AnimationDrawable
         }
 
         btn_start.setOnClickListener {
-            img_smile.visibility - View.VISIBLE
+            img_animation.visibility - View.VISIBLE
             animation?.let {
                 if (it.isRunning) {
                     it.stop()

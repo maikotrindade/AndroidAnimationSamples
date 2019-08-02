@@ -43,8 +43,8 @@ class ViewAnimationXMLFragment : BaseFragment() {
 
                 override fun onAnimationEnd(p0: Animation?) {
                     Log.d(TAG, "onAnimationEnd")
-                    img_smile.scaleX = 2F
-                    img_smile.scaleY = 2F
+                    img_animation.scaleX = 2F
+                    img_animation.scaleY = 2F
                 }
 
                 override fun onAnimationStart(p0: Animation?) {
@@ -52,7 +52,7 @@ class ViewAnimationXMLFragment : BaseFragment() {
                 }
 
             })
-            img_smile.startAnimation(growAnimation)
+            img_animation.startAnimation(growAnimation)
         }
     }
 }

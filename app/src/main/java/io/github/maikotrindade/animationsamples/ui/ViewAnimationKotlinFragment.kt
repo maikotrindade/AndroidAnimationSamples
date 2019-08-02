@@ -33,7 +33,7 @@ class ViewAnimationKotlinFragment : BaseFragment() {
 
     private fun setupUI() {
         btn_animate.setOnClickListener {
-            img_smile.animate()
+            img_animation.animate()
                 .setDuration(3000L)
                 .scaleX(2F)
                 .scaleY(2F)

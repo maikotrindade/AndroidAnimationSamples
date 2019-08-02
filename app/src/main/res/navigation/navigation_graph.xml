@@ -17,6 +17,9 @@
         <action
                 android:id="@+id/action_viewAnimKotlinFragment"
                 app:destination="@id/viewAnimKotlinFragment"/>
+        <action
+                android:id="@+id/action_frameAnimFragment"
+                app:destination="@id/frameAnimFragment"/>
     </fragment>
 
 
@@ -29,5 +32,10 @@
               android:label="@string/title_view_anim_kotlin"
               tools:layout="@layout/fragment_view_animation_kotlin"
               android:name="io.github.maikotrindade.animationsamples.ui.ViewAnimationKotlinFragment"/>
+
+    <fragment android:id="@+id/frameAnimFragment"
+              android:label="@string/title_frame_anim"
+              tools:layout="@layout/fragment_frame_animation"
+              android:name="io.github.maikotrindade.animationsamples.ui.FrameAnimationFragment"/>
 
 </navigation>

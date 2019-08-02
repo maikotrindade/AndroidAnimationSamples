@@ -5,8 +5,11 @@
     <string name="title_view_anim_xml">View Animation with XML</string>
     <string name="title_view_anim_kotlin">View Animation with Kotlin</string>
     <string name="title_frame_anim">Frame Animation</string>
+    <string name="title_object_animator">Animation via Object Animator and Animator Set</string>
     <string name="reload">Reload</string>
     <string name="reload_screen">Reloading screen…</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
+    <string name="play_together">Play Together</string>
+    <string name="sequentially">Sequentially</string>
 </resources>

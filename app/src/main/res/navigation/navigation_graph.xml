@@ -20,6 +20,9 @@
         <action
                 android:id="@+id/action_frameAnimFragment"
                 app:destination="@id/frameAnimFragment"/>
+        <action
+                android:id="@+id/action_objectAnimatorFragment"
+                app:destination="@id/objectAnimatorFragment"/>
     </fragment>
 
 
@@ -37,5 +40,10 @@
               android:label="@string/title_frame_anim"
               tools:layout="@layout/fragment_frame_animation"
               android:name="io.github.maikotrindade.animationsamples.ui.FrameAnimationFragment"/>
+
+    <fragment android:id="@+id/objectAnimatorFragment"
+              android:label="@string/title_object_animator"
+              tools:layout="@layout/fragment_object_animator"
+              android:name="io.github.maikotrindade.animationsamples.ui.ObjectAnimatorFragment"/>
 
 </navigation>

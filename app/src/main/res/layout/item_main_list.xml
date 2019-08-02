@@ -17,9 +17,10 @@
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:textSize="22sp"
-                android:maxLines="1"
+                android:maxLines="2"
+                android:layout_margin="4dp"
+                android:textAlignment="center"
                 android:ellipsize="end"
-                android:text="@string/animate"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/averia_sans_libre"/>

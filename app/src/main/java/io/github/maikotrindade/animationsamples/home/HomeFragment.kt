@@ -33,7 +33,8 @@ class HomeFragment : Fragment(), MainListOutput {
             Screen(getString(R.string.title_view_anim_xml), R.id.action_viewAnimFragment),
             Screen(getString(R.string.title_view_anim_kotlin), R.id.action_viewAnimKotlinFragment),
             Screen(getString(R.string.title_frame_anim), R.id.action_frameAnimFragment),
-            Screen(getString(R.string.title_object_animator), R.id.action_objectAnimatorFragment)
+            Screen(getString(R.string.title_object_animator), R.id.action_objectAnimatorFragment),
+            Screen(getString(R.string.title_interpolator_object_animator), R.id.action_interpolatorObjAnimFragment)
         )
 
     override fun onItemSelected(navAction: Int) {

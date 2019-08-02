@@ -23,6 +23,9 @@
         <action
                 android:id="@+id/action_objectAnimatorFragment"
                 app:destination="@id/objectAnimatorFragment"/>
+        <action
+                android:id="@+id/action_interpolatorObjAnimFragment"
+                app:destination="@id/interpolatorObjectAnimFragment"/>
     </fragment>
 
 
@@ -46,4 +49,8 @@
               tools:layout="@layout/fragment_object_animator"
               android:name="io.github.maikotrindade.animationsamples.ui.ObjectAnimatorFragment"/>
 
+    <fragment android:id="@+id/interpolatorObjectAnimFragment"
+              android:label="@string/title_interpolator_object_animator"
+              tools:layout="@layout/fragment_interpolator_object_anim"
+              android:name="io.github.maikotrindade.animationsamples.ui.InterpolatorObjectAnimFragment"/>
 </navigation>

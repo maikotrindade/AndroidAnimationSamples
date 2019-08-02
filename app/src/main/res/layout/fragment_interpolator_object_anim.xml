@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/container_buttons">
+
+        <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:id="@+id/img_animation"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:id="@+id/btn_1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintBottom_toTopOf="@id/btn_3"
+                android:text="@string/bounce"/>
+
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:id="@+id/btn_2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintBottom_toTopOf="@id/btn_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/fastoutslowin"/>
+
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:id="@+id/btn_3"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                style="@style/Widget.AppCompat.Button.Colored"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/overshoot"/>
+
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:id="@+id/btn_4"
+                style="@style/Widget.AppCompat.Button.Colored"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/accelerate"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

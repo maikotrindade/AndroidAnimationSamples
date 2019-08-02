@@ -23,16 +23,18 @@ class MainFragment : Fragment(), MainListOutput {
     }
 
     private fun setupUI() {
-        val screen1 = Screen(R.id.screen, getString(R.string.title_view_anim_xml), R.id.action_viewAnimFragment)
-
-        val listOfScreens = listOf(screen1)
         rv_fragments.layoutManager = LinearLayoutManager(context)
-        val listAdapter = MainListAdapter(listOfScreens, this)
+        val listAdapter = MainListAdapter(getScreenList(), this)
         rv_fragments.adapter = listAdapter
     }
+
+    private fun getScreenList() =
+        listOf(
+            Screen(getString(R.string.title_view_anim_xml), R.id.action_viewAnimFragment),
+            Screen(getString(R.string.title_view_anim_kotlin), R.id.action_viewAnimKotlinFragment)
+        )
 
     override fun onItemSelected(navAction: Int) {
         findNavController().navigate(navAction)
     }
-
 }

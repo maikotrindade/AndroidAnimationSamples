@@ -5,7 +5,7 @@ buildscript {
     ext.archVersion = '1.1.1'
     ext.navigationVersion = '2.1.0-beta02'
     ext.glideVersion = '4.9.0'
-    ext.$lottieVersion = '3.0.7'
+    ext.lottieVersion = '3.0.7'
 
     repositories {
         google()

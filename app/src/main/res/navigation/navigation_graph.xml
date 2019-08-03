@@ -26,10 +26,12 @@
         <action
                 android:id="@+id/action_interpolatorObjAnimFragment"
                 app:destination="@id/interpolatorObjectAnimFragment"/>
-
         <action
                 android:id="@+id/action_transitionSharedFragment"
                 app:destination="@id/transitionSharedFragment"/>
+        <action
+                android:id="@+id/action_transitionSceneFragment"
+                app:destination="@id/transitionSceneFragment"/>
     </fragment>
 
 
@@ -72,4 +74,9 @@
               android:label="@string/title_transition_shared_elements"
               tools:layout="@layout/fragment_shared_elements_details"
               android:name="io.github.maikotrindade.animationsamples.ui.SharedElementsDetailsFragment"/>
+
+    <fragment android:id="@+id/transitionSceneFragment"
+              android:label="@string/title_transition_scenes"
+              tools:layout="@layout/fragment_transition_scene"
+              android:name="io.github.maikotrindade.animationsamples.ui.TransitionSceneFragment"/>
 </navigation>

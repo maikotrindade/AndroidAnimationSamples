@@ -1,8 +1,6 @@
 package io.github.maikotrindade.animationsamples.ui
 
-import android.animation.Animator
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,30 +31,14 @@ class ViewAnimationKotlinFragment : BaseFragment() {
 
     private fun setupUI() {
         btn_animate.setOnClickListener {
-            img_animation.animate()
+            val animator = img_animation.animate()
                 .setDuration(3000L)
                 .scaleX(2F)
                 .scaleY(2F)
                 .rotationX(360F)
                 .rotationY(360F)
                 .translationX(150F)
-                .setListener(object: Animator.AnimatorListener {
-                    override fun onAnimationRepeat(p0: Animator?) {
-                        Log.d(TAG, "onAnimationRepeat")
-                    }
-
-                    override fun onAnimationEnd(p0: Animator?) {
-                        Log.d(TAG, "onAnimationEnd")
-                    }
-
-                    override fun onAnimationCancel(p0: Animator?) {
-                        Log.d(TAG, "onAnimationCancel")
-                    }
-
-                    override fun onAnimationStart(p0: Animator?) {
-                        Log.d(TAG, "onAnimationStart")
-                    }
-                })
+            addLogger(TAG, animator)
         }
 
     }

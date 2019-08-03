@@ -40,7 +40,9 @@ class TransitionSceneFragment : BaseFragment() {
         val scene2: Scene = Scene.getSceneForLayout(container_scene, R.layout.scene_boom, requireContext())
 
         val explodeTransition = Explode()
+        addLogger(TAG, explodeTransition)
         val fadeTransition = Fade()
+        addLogger(TAG, fadeTransition)
 
         btn_animate.setOnClickListener {
             currentScene = if (currentScene == 1) {

@@ -1,9 +1,7 @@
 package io.github.maikotrindade.animationsamples.ui
 
-import android.animation.Animator
 import android.animation.ObjectAnimator
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,7 +40,7 @@ class InterpolatorObjectAnimFragment : BaseFragment() {
             val targetY =  (container_view.height - img_animation.height).toFloat()
             ObjectAnimator.ofFloat(img_animation, "y", 0F, targetY).apply {
                 duration = 900
-                addLogger(this)
+                addLogger(TAG, this)
                 interpolator = BounceInterpolator()
                 start()
             }
@@ -52,7 +50,7 @@ class InterpolatorObjectAnimFragment : BaseFragment() {
             val targetY =  (container_view.height - img_animation.height).toFloat()
             ObjectAnimator.ofFloat(img_animation, "y", 0F, targetY).apply {
                 duration = 900
-                addLogger(this)
+                addLogger(TAG,this)
                 interpolator = FastOutSlowInInterpolator()
                 start()
             }
@@ -62,7 +60,7 @@ class InterpolatorObjectAnimFragment : BaseFragment() {
             val targetY =  (container_view.height - img_animation.height).toFloat()
             ObjectAnimator.ofFloat(img_animation, "y", 0F, targetY).apply {
                 duration = 900
-                addLogger(this)
+                addLogger(TAG,this)
                 interpolator = OvershootInterpolator()
                 start()
             }
@@ -72,33 +70,12 @@ class InterpolatorObjectAnimFragment : BaseFragment() {
             val targetY =  (container_view.height - img_animation.height).toFloat()
             ObjectAnimator.ofFloat(img_animation, "y", 0F, targetY).apply {
                 duration = 900
-                addLogger(this)
+                addLogger(TAG,this)
                 interpolator = AccelerateInterpolator()
                 start()
             }
         }
 
-    }
-
-
-    private fun addLogger(objectAnimator: ObjectAnimator) {
-        objectAnimator.addListener(object : Animator.AnimatorListener {
-            override fun onAnimationRepeat(animator: Animator) {
-                Log.d(TAG, "onAnimationRepeat")
-            }
-
-            override fun onAnimationEnd(animator: Animator) {
-                Log.d(TAG, "onAnimationEnd")
-            }
-
-            override fun onAnimationCancel(animator: Animator) {
-                Log.d(TAG, "onAnimationCancel")
-            }
-
-            override fun onAnimationStart(animator: Animator) {
-                Log.d(TAG, "onAnimationStart")
-            }
-        })
     }
 
 }

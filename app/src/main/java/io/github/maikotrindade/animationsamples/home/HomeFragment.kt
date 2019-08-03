@@ -37,7 +37,7 @@ class HomeFragment : Fragment(), MainListOutput {
             Screen(getString(R.string.title_interpolator_object_animator), R.id.action_interpolatorObjAnimFragment),
             Screen(getString(R.string.title_transition_shared_elements), R.id.action_transitionSharedFragment),
             Screen(getString(R.string.title_transition_scenes), R.id.action_transitionSceneFragment),
-            Screen(getString(R.string.title_transition_scenes), R.id.action_transitionSceneFragment)
+            Screen(getString(R.string.title_lottie), R.id.lottieFragment)
         )
 
     override fun onItemSelected(navAction: Int) {

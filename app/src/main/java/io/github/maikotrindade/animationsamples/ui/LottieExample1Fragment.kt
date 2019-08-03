@@ -5,13 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.transition.TransitionInflater
 import io.github.maikotrindade.animationsamples.R
 
-class SharedElementsDetailsFragment : Fragment() {
+class LottieExample1Fragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        sharedElementEnterTransition = TransitionInflater.from(context).inflateTransition(android.R.transition.move)
-        return inflater.inflate(R.layout.fragment_shared_elements_details, container, false)
+        return inflater.inflate(R.layout.fragment_lottie_example1, container, false)
     }
+
 }

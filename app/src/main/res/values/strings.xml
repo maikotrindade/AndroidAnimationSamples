@@ -33,4 +33,5 @@
     </string>
     <string name="scene_2">Scene 2</string>
     <string name="scene_1">Scene 1</string>
+    <string name="loading_from_json">Loading from json</string>
 </resources>

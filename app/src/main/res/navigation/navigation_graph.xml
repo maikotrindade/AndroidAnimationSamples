@@ -85,5 +85,14 @@
     <fragment android:id="@+id/lottieFragment"
               android:label="@string/title_lottie"
               tools:layout="@layout/fragment_lottie"
-              android:name="io.github.maikotrindade.animationsamples.ui.LottieFragment"/>
+              android:name="io.github.maikotrindade.animationsamples.ui.LottieFragment">
+        <action
+                android:id="@+id/action_lottieExample1Fragment"
+                app:destination="@id/lottieExample1Fragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/lottieExample1Fragment"
+              android:label="@string/loading_from_json"
+              tools:layout="@layout/fragment_lottie_example1"
+              android:name="io.github.maikotrindade.animationsamples.ui.LottieExample1Fragment"/>
 </navigation>

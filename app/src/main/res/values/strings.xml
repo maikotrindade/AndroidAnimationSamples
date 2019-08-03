@@ -9,6 +9,7 @@
     <string name="title_interpolator_object_animator">Animation with Interpolators</string>
     <string name="title_transition_shared_elements">Transition Framework with Shared Elements</string>
     <string name="title_transition_scenes">Transition Framework with Scenes</string>
+    <string name="title_lottie">Lottie – After Effects animations</string>
     <string name="reload">Reload</string>
     <string name="reload_screen">Reloading screen…</string>
     <string name="start">Start</string>

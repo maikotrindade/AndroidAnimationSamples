@@ -32,8 +32,10 @@
         <action
                 android:id="@+id/action_transitionSceneFragment"
                 app:destination="@id/transitionSceneFragment"/>
+        <action
+                android:id="@+id/action_lottieFragment"
+                app:destination="@id/lottieFragment"/>
     </fragment>
-
 
     <fragment android:id="@+id/viewAnimFragment"
               android:label="@string/title_view_anim_xml"
@@ -79,4 +81,9 @@
               android:label="@string/title_transition_scenes"
               tools:layout="@layout/fragment_transition_scene"
               android:name="io.github.maikotrindade.animationsamples.ui.TransitionSceneFragment"/>
+
+    <fragment android:id="@+id/lottieFragment"
+              android:label="@string/title_lottie"
+              tools:layout="@layout/fragment_lottie"
+              android:name="io.github.maikotrindade.animationsamples.ui.LottieFragment"/>
 </navigation>

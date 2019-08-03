@@ -9,6 +9,7 @@
         <item name="windowActionBar">false</item>
         <item name="android:textViewStyle">@style/TextViewStyle</item>
         <item name="toolbarStyle">@style/ToolBarStyle</item>
+        <item name="android:windowContentTransitions">true</item>
     </style>
 
     <style name="ToolBarStyle" parent="Widget.AppCompat.Toolbar">

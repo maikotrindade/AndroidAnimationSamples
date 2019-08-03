@@ -26,6 +26,10 @@
         <action
                 android:id="@+id/action_interpolatorObjAnimFragment"
                 app:destination="@id/interpolatorObjectAnimFragment"/>
+
+        <action
+                android:id="@+id/action_transitionSharedFragment"
+                app:destination="@id/transitionSharedFragment"/>
     </fragment>
 
 
@@ -53,4 +57,19 @@
               android:label="@string/title_interpolator_object_animator"
               tools:layout="@layout/fragment_interpolator_object_anim"
               android:name="io.github.maikotrindade.animationsamples.ui.InterpolatorObjectAnimFragment"/>
+
+    <fragment android:id="@+id/transitionSharedFragment"
+              android:label="@string/title_transition_shared_elements"
+              tools:layout="@layout/fragment_transition_shared_elements"
+              android:name="io.github.maikotrindade.animationsamples.ui.TransitionSharedElementsFragment">
+
+        <action
+                android:id="@+id/action_transitionDetailsFragment"
+                app:destination="@id/transitionSharedDetailsFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/transitionSharedDetailsFragment"
+              android:label="@string/title_transition_shared_elements"
+              tools:layout="@layout/fragment_shared_elements_details"
+              android:name="io.github.maikotrindade.animationsamples.ui.SharedElementsDetailsFragment"/>
 </navigation>

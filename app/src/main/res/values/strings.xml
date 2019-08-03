@@ -7,6 +7,7 @@
     <string name="title_frame_anim">Frame Animation</string>
     <string name="title_object_animator">Animation via Object Animator and Animator Set</string>
     <string name="title_interpolator_object_animator">Animation with Interpolators</string>
+    <string name="title_transition_shared_elements">Transition Framework with Shared Elements</string>
     <string name="reload">Reload</string>
     <string name="reload_screen">Reloading screen…</string>
     <string name="start">Start</string>
@@ -17,4 +18,15 @@
     <string name="overshoot">Overshoot</string>
     <string name="accelerate">Accelerate</string>
     <string name="fastoutslowin">FastOutSlowIn</string>
+    <string name="next">Next</string>
+    <string name="title">Lorem Ipsum</string>
+    <string name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mauris felis, vulputate
+        vitae est sed, venenatis hendrerit leo. Praesent faucibus quis libero ac blandit. Cras id tellus eu justo
+        sagittis lacinia ac ut ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+        mus. Maecenas aliquam venenatis eleifend. Curabitur lorem orci, maximus et justo vitae, finibus lacinia dolor.
+        Nullam non tristique mauris, eget tempor urna. Vivamus vel ornare dui, at tincidunt dui. Donec lectus tortor,
+        lobortis at diam in, tincidunt hendrerit ex. Nunc aliquam lectus ut efficitur pulvinar. Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Nunc hendrerit felis in faucibus tincidunt. Aenean facilisis lectus sed justo
+        tincidunt, nec elementum ligula laoreet.
+    </string>
 </resources>

@@ -15,10 +15,10 @@
             app:layout_constraintBottom_toTopOf="@+id/container_buttons">
 
         <ImageView
-                android:layout_width="96dp"
-                android:layout_height="96dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/img_animation"
-                android:src="@mipmap/ic_launcher"
+                android:src="@drawable/android"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
